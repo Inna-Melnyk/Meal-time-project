@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon start -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicon/safari-pinned-tab.svg"
+      color="#c44242" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Favicon end -->
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>Meal Time</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-header">
+        <div class="header-container">
+          <div class="tel">
+            <p class="top-header-text">Відділ продажу:</p>
+            <a class="link tel" href="tel:+380673542220">+38 (067) 354 22 20</a>
+          </div>
+
+          <div class="header-rigth-side">
+            <label class="top-header-text"
+              >Ваше місто:<select class="header-select city" name="city">
+                <option value="kyiv">Київ</option>
+                <option value="kharkiv">Харків</option>
+                <option value="odesa">Одеса</option>
+                <option value="lviv">Львів</option>
+              </select></label
+            >
+
+            <label class="top-header-text"
+              ><select class="header-select language" name="language">
+                <option value="ua">UA</option>
+                <option value="eng">ENG</option>
+                <option value="de">DE</option>
+              </select></label
+            >
+
+            <div class="cabinet">
+              <svg width="14" height="14">
+                <use class="icon" href="./assets/sprite.svg#person"></use>
+              </svg>
+              <p class="header-select">Особистий кабінет</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-header">
+        <div class="header-container">
+          <a class="logo" href="/index.html">
+            <svg width="55" height="58">
+              <use href="./assets/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <ul class="list menu-btn-list">
+            <li>
+              <button class="menu-btn" data-menu-open>
+                <svg width="22" height="22">
+                  <use
+                    class="menu-icon"
+                    href="./assets/sprite.svg#menu"></use>
+                    </svg>Каталог
+              </button>
+            </li>
+            <li>
+              <button class="menu-btn">
+                <svg width="22" height="22">
+                  <use class="icon" href="./assets/sprite.svg#money"></use>
+                  </svg>Почати бізнес
+              </button>
+            </li>
+          </ul>
+
+          <nav>
+            <ul class="list nav-list list">
+              <li class="nav-list-item">
+                <a class="nav-link link" href="#">Акції</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link link" href="#">Про продукцію</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link link" href="#">Про компанію</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link link current" href="#">Доставка</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link link" href="#">Блог</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="list instrument-list">
+            <li>
+              <a class="instrument-link" href="#">
+                <svg width="24" height="24">
+                  <use
+                    class="icon"
+                    href="./assets/sprite.svg#search"></use></svg></a>
+            </li>
+            <li>
+              <a class="instrument-link" href="#"
+                ><svg width="24" height="24">
+                  <use class="icon" href="./assets/sprite.svg#heart"></use></svg></a>
+            </li>
+            <li>
+              <a class="instrument-link" href="#"
+                ><svg width="24" height="24">
+                  <use class="icon" href="./assets/sprite.svg#cart"></use></svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main></main>
+    <footer></footer>
+
+    <!-- submenu-->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="menu-level-one">
+        <ul class="list menu-list">
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Дегустаційні набори</p>
+              <svg width="24" height="24">
+                <use class="test-icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Напої</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+
+            <div class="menu-level-two">
+              <ul class="list menu-list">
+                <li class="menu-list-item">
+                  <div class="menu-item">
+                    <p class="menu-text">чай</p>
+                    <svg width="24" height="24">
+                      <use
+                        class="test-icon"
+                        href="./assets/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="menu-level-three">
+                    <ul class="list product-list">
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Асорті" (12 шт), 50 г.
+                          </p>
+                          <p class="product-price">
+                            294,84 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Лісові ягоди" (13 шт), 50 г.
+                          </p>
+                          <p class="product-price">
+                            289,40 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Облепиха з чебрецем" (12 шт), 50 г.
+                          </p>
+                          <p class="product-price">
+                            270 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Журавлина з апельсином" (12 шт), 50 г.
+                          </p>
+                          <p class="product-price">
+                            294,84 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Асорті" (24 шт), 60 г.
+                          </p>
+                          <p class="product-price">
+                            350 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Асорті" (13 шт), 40 г.
+                          </p>
+                          <p class="product-price">
+                            285,48 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Калина з естрогоном" (12 шт), 50 г.
+                          </p>
+                          <p class="product-price">
+                            279,36 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Смородина з базиліком" (12 шт), 50 г.
+                          </p>
+                          <p class="product-price">
+                            282,84 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Чорниця з малиною" (12 шт), 50 г.
+                          </p>
+                          <p class="product-price">
+                            324,50 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Чорниця з малиною" (12 шт), 50 г.
+                          </p>
+                          <p class="product-price">
+                            324,50 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img-wrapper">
+                          <img src="/assets/product.jpg" alt="product ter" />
+                        </div>
+                        <div>
+                          <p class="product-description">
+                            Чай "Чорниця з малиною" (12 шт), 50 г.
+                          </p>
+                          <p class="product-price">
+                            324,50 <span class="currency">грн.</span
+                            ><span class="quantity">1 уп.</span>
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="gradient"></div>
+                  </div>
+                </li>
+                <li class="menu-list-item">
+                  <div class="menu-item">
+                    <p class="menu-text">Бульйон</p>
+                    <svg width="24" height="24">
+                      <use class="icon" href="./assets/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </li>
+                <li class="menu-list-item">
+                  <div class="menu-item">
+                    <p class="menu-text">Лимонад</p>
+                    <svg width="24" height="24">
+                      <use class="icon" href="./assets/sprite.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Перші страви</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Другі страви</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Фуд конструктор</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Хлібобулочні вироби</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Фаст фуд</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">На вугіллі</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Напівфабрикати</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Соуси</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Десерти</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="menu-list-item">
+            <div class="menu-item">
+              <p class="menu-text">Інші товари</p>
+              <svg width="24" height="24">
+                <use class="icon" href="./assets/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--JS --------------->
+
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
