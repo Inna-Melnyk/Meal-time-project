@@ -71,7 +71,7 @@ img {
   padding-right: 16px;
 }
 
-@media screen and (min-width: 428px) {
+/* @media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
   }
@@ -80,8 +80,8 @@ img {
   .container {
     max-width: 768px;
   }
-}
-@media screen and (min-width: 1920px) {
+} */
+@media screen and (min-width: 1900px) {
   .container {
     max-width: 1500px;
     padding-left: 15px;
@@ -172,7 +172,13 @@ img {
   cursor: pointer;
   fill: currentColor;
 }
+
+
 /* ___________________MAIN HEADER____________________ */
+
+.main-header {
+  border-bottom: 1px solid var(--Gray, #e8e8e8);
+}
 
 .main-header > .header-container {
   padding: 20px 20px;
@@ -194,7 +200,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 15px;
   padding: 14px 20px;
 
   font-size: 16px;
@@ -234,7 +240,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 56px;
+  gap: 54px;
   margin-right: 183px;
 }
 
@@ -263,6 +269,82 @@ img {
 .instrument-link:hover {
   color: var(--color-accent);
 }
+
+
+/* HERO */
+
+.hero {
+   
+  padding: 55px 0;
+  background: url(../assets/hero.png) no-repeat,
+    linear-gradient(270deg, #d6d4d9 75.83%, rgba(214, 212, 217, 0) 100%);
+  height: 658px;
+}
+.title-section {
+  padding: 30px 0 40px;
+}
+.hero>.container{
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-container {
+  margin-bottom: 31px;
+
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  color: var(--Gray-dark, #9c9c9c);
+}
+.nav-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+.subtext {
+  font-family: IBM Plex Sans;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.04;
+}
+
+.hero-info{
+
+  max-width: 710px;
+
+}
+.hero-text {
+  margin-bottom: 40px;
+  font-family: IBM Plex Sans;
+font-size: 42px;
+font-weight: 700;
+line-height: 1.09; 
+
+}
+.advantages-list {
+  display: flex;
+flex-wrap: wrap;
+align-items: start;
+row-gap: 20px;
+column-gap: 30px;
+}
+.advantages-list-item{
+  flex: 0 0 calc(33.33% - 20px); 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.advantage-text {
+  color: var(--Black, #000);
+font-family: Roboto;
+font-size: 17px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+
+
+
+
 
 /* ___________________ MENU LEVEL ONE ____________________ */
 
